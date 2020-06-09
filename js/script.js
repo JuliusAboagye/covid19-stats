@@ -19,7 +19,8 @@ let total_cases_list=[],total_recovery_list=[],
 	total_deaths_list=[], formatedDate=[];
 let app_data=[];
 
-let country_code = String(geoplugin_countryCode());
+//let country_code = String(geoplugin_countryCode());
+let country_code="GB";
 let user_country;
 country_list.forEach(country =>{
 if(country.code==country_code){
