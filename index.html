@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
+  <head>   
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Covid Stats Site</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="./css/styles.css">
+<title>Covid Stats Site</title>
+   
   </head>
   <body>
-    
-    <div class="w3-bar w3-black w3-hide-small">
-      <span class="w3-bar-item w3-mobile ">Covid Real Time Stats</span>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Home</a>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Link 3</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <div class="container ">
+        <a class="navbar-brand " href="#">Covid-19 Stats Visualized</a>
+      </div>
+      <span class="navbar-text .text-black">
+        Stay Home, Protect The NHS, Save Lives❤️
+      </span>
+    </nav>
+      <div class="row ">
+        <div class="column searchFeat">
+         <select name="countries" id="countries"></select>
+         <button onclick="setCountryName()">Submit</button>
+        </div>
+      </div>
+      <div class="main">
+      <div class="row">
+        <div class="column numbers">
+       <div class="stats">
+        <div class="latet-report">
+          <div class="country">
+            <div class="name">Country</div>
+          </div>
+          
+          <div class="total-cases">
+            <div class="title">Total cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Total Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Total Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+
+     <div class="column charts">
+      <canvas id="linear_chart"></canvas>
+      
+
+     </div>
+
+     <div class="column twitter">
+      <canvas id="linear_chart2"></canvas>
+
+     </div>
+  </div>
+  <div class="row">
+    <div class="column barChart">
+      <canvas id="bar_chart"></canvas>
     </div>
-    <div class="w3-bar w3-black w3-hide-medium w3-hide-large">
-      <span class="w3-bar-item w3-mobile">Covid Real Time Stats</span>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Home</a>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right">Link 3</a>
+    <div class="column barChart2">
+      <canvas id="bar_chart2"></canvas>
     </div>
-  
+    <div class="column pieChart">
+      <canvas id="pie_Chart"></canvas>
+    </div>
+  </div>
+</div>
     
+
+
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
+<script src="./js/countries.js"></script>
+<script src="./js/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    
+    
+
   </body>
 </html>

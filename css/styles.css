@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+    }
+    
+    html{
+        font-size: 16px;
+        
+    }
+    
+    body{
+        background-color: #efefef;
+        padding: 0px;
+        margin: 0;
+
+    }
+    .main{
+
+    margin-left: 25px;
+    margin-right: 25px;
+
+    }
+    
+    .hide{
+        display: none;
+    }
+    .fadeIn{
+        animation: fade 0.5s ease-in-out ;
+    }
+    @keyframes fade{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1%;
+        }
+    }
+    
+    
+    .column {
+      float: left;
+      width: 32%;
+      padding: 10px;
+      height: 500px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      padding-top: 5px;
+      clear: both;
+    }
+    .searchFeat{
+    float: left;
+    height: 0;
+    padding: 0px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    
+    
+    }
+    .intro{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        
+    } 
+    .intro p{
+    font-weight: bold;
+    
+    }
+    nav{
+        
+    }
+    nav ul{
+    display: flex;
+    align-items: center;
+    
+    }
+    nav ul li{
+        list-style: none;
+    
+     }
+    
+     nav ul li:last-child{
+         padding-right: 20px;
+     }
+    
+     nav ul li a{
+         text-decoration: none;
+         padding:10px;
+     }
+     .name{
+         font-size: 2.2em;
+         font-weight: bold;
+         color: #0091EA;
+     }
+     .title{
+         font-size: 1.3em;
+     }
+     .total-cases .value{
+         font-size: 2.0em;
+         font-weight: bold;
+         color:#f47100;
+
+     }
+     .recovered .value{
+        font-size: 2.0em;
+        font-weight: bold;
+        color: green;
+    }
+    .deaths .value{
+        font-size: 2.0em;
+        font-weight: bold;
+        color: red;
+    }
+    .new-value{
+        font-size: 1.3rem;
+    }
+    
+    .numbers{
+        align-items: center;
+         width: 20%;
+         background-color: #fff;
+         padding: 15px;
+         margin-right: 10px;
+         border-radius: 10px;
+         height: 500px;
+     }
+    
+    
+    .total-cases,.recovered,.deaths{
+    padding-top: 15px;
+    
+    
+     }
+     .charts{
+    width:39%;
+    background-color: #fff;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 500px;
+    
+     }
+    .twitter{
+        
+         
+         width: 39%;
+         background-color: #fff;
+         padding: 15px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+         height: 500px;
+     }
+    
+    .barChart{
+        
+         
+         
+         background-color: #fff;
+         padding: 15px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+         height: 500px;
+     }
+    
+     .barChart2{
+        
+         
+         margin-left: 10px;
+         background-color: #fff;
+         padding: 15px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+         height: 500px;
+     }
+    
+     .pieChart{
+        
+         
+         margin-left: 10px;
+         background-color: #fff;
+         padding: 15px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+         height: 500px;
+     }
+    
+    
+    
+    @media (max-width: 600px) {
+      .column {
+        margin-top: 15px;
+        width: 100%;
+      }
+    }
