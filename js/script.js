@@ -35,7 +35,7 @@ fetch(`https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_by_days_by_c
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "covid19-monitor-pro.p.rapidapi.com",
-		"x-rapidapi-key": "103eaee914mshbba97e22c30b845p12190ejsn006e3f363e00"
+			"x-rapidapi-key": "7e269ec140msh8a5df9cfc21b4b4p1c1e3ejsn9aba26afc6e0"
 
 		}
 	})
